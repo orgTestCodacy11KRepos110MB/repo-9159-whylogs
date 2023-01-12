@@ -81,7 +81,7 @@ class ModelPerformanceMetrics:
         self,
         predictions: List[Union[str, int, bool, float]],
         targets: List[Union[str, int, bool, float]],
-        scores: List[float] = None,
+        scores: Optional[List[float]] = None,
     ):
         """
         computes the confusion_matrix, if one is already present merges to old one.
@@ -144,7 +144,7 @@ class ModelPerformanceMetrics:
                     output_column_names.append(column_name)
         return output_column_names
 
-    def merge(self, other):
+    def merge(self, other) -> "ModelPerformanceMetrics":
         """
         :type other: ModelMetrics
         """

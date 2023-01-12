@@ -28,7 +28,7 @@ class FeatureWeights(Writable):
         return FeatureWeightWriter(feature_weight=self, writer=writer)
 
     def get_default_path(self) -> str:
-        pass
+        return ""
 
     def write(self, path: Optional[str] = None, **kwargs: Any) -> None:
         pass
