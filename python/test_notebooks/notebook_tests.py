@@ -20,6 +20,7 @@ skip_notebooks = [
     "Writing_Feature_Weights_to_WhyLabs.ipynb",
     "Image_Logging.ipynb",
     "mnist_exploration.ipynb",
+    "NLP_Summarization.ipynb",
 ]
 
 
